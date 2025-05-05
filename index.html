@@ -8,11 +8,11 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #e0eafc, #cfdef3);
-      color: #333;
+      background: #1f1f1f;
+      color: #eee;
     }
     header {
-      background: linear-gradient(120deg, #2980b9, #6dd5fa, #ffffff);
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #fff;
       padding: 60px 20px;
       text-align: center;
@@ -20,10 +20,9 @@
     h1 {
       margin: 0;
       font-size: 42px;
-      color: #fff;
     }
     nav {
-      background: #2c3e50;
+      background: #111;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -33,7 +32,7 @@
       z-index: 100;
     }
     nav a {
-      color: white;
+      color: #eee;
       margin: 8px 20px;
       text-decoration: none;
       font-weight: bold;
@@ -43,44 +42,49 @@
       color: #1abc9c;
     }
     section {
-      padding: 30px 20px;
-      max-width: 1100px;
+      padding: 40px 20px;
+      max-width: 1200px;
       margin: auto;
     }
     h2 {
       border-bottom: 2px solid #3498db;
       padding-bottom: 5px;
-      color: #2c3e50;
+      color: #61dafb;
     }
     .card {
-      background: white;
-      margin: 20px 0;
+      background: #2b2b2b;
+      margin: 20px;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      flex: 1 1 45%;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
     }
     .card h3 {
       margin-top: 0;
-      color: #2980b9;
+      color: #1abc9c;
     }
     ul {
       padding-left: 20px;
     }
     footer {
-      background: #2c3e50;
-      color: white;
+      background: #111;
+      color: #aaa;
       text-align: center;
       padding: 20px;
       font-size: 14px;
     }
     a {
-      color: #1a73e8;
+      color: #61dafb;
     }
-    .project-image {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-top: 15px;
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
     }
   </style>
 </head>
@@ -88,7 +92,7 @@
 
 <header>
   <h1 id="typing"></h1>
-  <p style="font-size:18px; color:#333;">Data Analyst | Excel | SQL | Power BI | Tableau | Python</p>
+  <p style="font-size:18px; color:#ccc;">Data Analyst | Excel | SQL | Power BI | Tableau | Python</p>
 </header>
 
 <nav>
@@ -146,48 +150,45 @@
 
 <section id="projects">
   <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="card">
+      <h3>📊 Road Accident Analysis Dashboard (Excel)</h3>
+      <p>Analyzed Seattle road accident data to identify patterns and risk zones. Used advanced pivot charts and conditional formatting to display trends and highlight safety recommendations. <br>
+      <a href="https://github.com/DheemanJain/Road_Accident_Dashboard" target="_blank">View on GitHub</a></p>
+    </div>
 
-  <div class="card">
-  <h3>📊 Road Accident Analysis Dashboard (Excel)</h3>
-  <p>Analyzed Seattle road accident data to identify patterns and risk zones. Used advanced pivot charts and conditional formatting to display trends and highlight safety recommendations. <br>
-  <a href="https://github.com/DheemanJain/Road_Accident_Dashboard" target="_blank">View on GitHub</a></p>
-  <img src="Screenshot 2025-03-06 223420.png" alt="Road Accident Dashboard" class="project-image" />
-</div>
+    <div class="card">
+      <h3>📈 Student Marks Analysis Dashboard (Excel)</h3>
+      <p>Created a student performance tracker dashboard that visualizes marks distribution, subject-wise performance, and grading trends. Enabled education teams to make better academic decisions. <br>
+      <a href="https://1drv.ms/x/c/c420b23459749e4a/EV3oEBmdB49PrgmBSREP9DYBAQ5bxnSDX2zzmkyGawX-0w?e=FaTuOt" target="_blank">View Dashboard</a></p>
+    </div>
 
-  <div class="card">
-  <h3>📈 Student Marks Analysis Dashboard (Excel)</h3>
-  <p>Created a student performance tracker dashboard that visualizes marks distribution, subject-wise performance, and grading trends. Enabled education teams to make better academic decisions. <br>
-  <a href="https://1drv.ms/x/c/c420b23459749e4a/EV3oEBmdB49PrgmBSREP9DYBAQ5bxnSDX2zzmkyGawX-0w?e=FaTuOt" target="_blank">View Dashboard</a></p>
-  <img src="screenshot_student_marks.jpg" alt="Student Marks Dashboard" class="project-image" />
-</div>
+    <div class="card">
+      <h3>🧹 Data Cleaning with SQL</h3>
+      <p>Used SQL to clean and structure real-world datasets (layoffs and student marks). Removed duplicates, handled NULLs, and standardized formats to enable BI tools to consume clean data. <br>
+      <a href="https://github.com/DheemanJain/Data_Cleaning_Project_Layoffs" target="_blank">Layoffs Cleaning Project</a><br>
+      <a href="https://github.com/DheemanJain/Data_Cleaning_Students_Marks_SQL_Project" target="_blank">Students Marks Cleaning Project</a></p>
+    </div>
 
-<div class="card">
-  <h3>🧹 Data Cleaning with SQL</h3>
-  <p>Used SQL to clean and structure real-world datasets (layoffs and student marks). Removed duplicates, handled NULLs, and standardized formats to enable BI tools to consume clean data. <br>
-  <a href="https://github.com/DheemanJain/Data_Cleaning_Project_Layoffs" target="_blank">Layoffs Cleaning Project</a><br>
-  <a href="https://github.com/DheemanJain/Data_Cleaning_Students_Marks_SQL_Project" target="_blank">Students Marks Cleaning Project</a></p>
-  <img src="Screenshot 2025-05-05 133615.png" alt="SQL Cleaning" class="project-image" />
-</div>
+    <div class="card">
+      <h3>📊 Survey Visualization (Power BI)</h3>
+      <p>Built interactive Power BI dashboard analyzing job satisfaction, salary trends, and skill demand across countries. Used slicers and DAX formulas for dynamic filtering and deep insights. <br>
+      <a href="https://github.com/DheemanJain/Data_Professional_Survey_Dashboard" target="_blank">View on GitHub</a></p>
+    </div>
 
-<div class="card">
-  <h3>📊 Survey Visualization (Power BI)</h3>
-  <p>Built interactive Power BI dashboard analyzing job satisfaction, salary trends, and skill demand across countries. Used slicers and DAX formulas for dynamic filtering and deep insights. <br>
-  <a href="https://github.com/DheemanJain/Data_Professional_Survey_Dashboard" target="_blank">View on GitHub</a></p>
-  <img src="Screenshot 2025-05-05 150333.png" alt="Power BI Dashboard" class="project-image" />
-</div>
+    <div class="card">
+      <h3>📍Airbnb Listing Analysis (Tableau)</h3>
+      <p>Explored Airbnb data to identify optimal pricing, occupancy, and ratings. Created dynamic Tableau dashboards with filters and KPIs that helped spot profitable listing patterns. <br>
+      <a href="https://github.com/DheemanJain/Airbnb_Project" target="_blank">View on GitHub</a></p>
+    </div>
 
-<div class="card">
-  <h3>📍Airbnb Listing Analysis (Tableau)</h3>
-  <p>Explored Airbnb data to identify optimal pricing, occupancy, and ratings. Created dynamic Tableau dashboards with filters and KPIs that helped spot profitable listing patterns. <br>
-  <a href="https://github.com/DheemanJain/Airbnb_Project" target="_blank">View on GitHub</a></p>
-  <img src="Screenshot 2025-05-05 151752.png" alt="Airbnb Tableau" class="project-image" />
-</div>
-
-<div class="card">
-  <h3>🐍 Python EDA & Cleaning</h3>
-  <p>Performed complete EDA using Pandas & Matplotlib on raw datasets. Applied outlier detection, encoding, and created plots to summarize key relationships and trends. <br>
-  <a href="https://github.com/DheemanJain/Data-Cleaning_and_EDA_Project_in_Python" target="_blank">View on GitHub</a></p>
-</div>
+    <div class="card">
+      <h3>🐍 Python EDA & Cleaning</h3>
+      <p>Performed complete EDA using Pandas & Matplotlib on raw datasets. Applied outlier detection, encoding, and created plots to summarize key relationships and trends. <br>
+      <a href="https://github.com/DheemanJain/Data-Cleaning_and_EDA_Project_in_Python" target="_blank">View on GitHub</a></p>
+    </div>
+  </div>
+</section>
 
 <section id="certifications">
   <h2>Certifications</h2>
@@ -218,7 +219,6 @@
     <p><strong>Phone:</strong> +91 9205635119</p>
     <p><strong>GitHub:</strong> <a href="https://github.com/DheemanJain" target="_blank">DheemanJain</a></p>
     <p><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/dheeman-jain-0ba2a31ab/" target="_blank">DheemanJain</a></p>
-
   </div>
 </section>
 
