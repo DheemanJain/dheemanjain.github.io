@@ -1,86 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Dheeman Jain | Data Analyst Portfolio</title>
-    <script>
-        function toggleDetails(id) {
-            var el = document.getElementById(id);
-            el.style.display = el.style.display === 'none' ? 'block' : 'none';
-        }
-    </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dheeman Jain | Data Analyst Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(120deg, #2980b9, #6dd5fa, #ffffff);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 42px;
+      color: #fff;
+    }
+    nav {
+      background: #2c3e50;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      margin: 8px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #1abc9c;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+      color: #2c3e50;
+    }
+    .card {
+      background: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #2980b9;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    a {
+      color: #1a73e8;
+    }
+    .project-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; margin: 0; background: linear-gradient(to right, #f0f4f7, #dcefff); color: #333;">
-    <div style="max-width: 1200px; margin: auto; padding: 20px;">
-        <header style="text-align: center; padding: 40px 0;">
-            <h1 style="font-size: 3em; margin: 0;">Dheeman Jain</h1>
-            <p style="font-size: 1.2em; color: #555;">Aspiring Data Analyst | Excel • SQL • Power BI • Python • Tableau</p>
-            <p>Email: <a href="mailto:dheemanjain15@gmail.com">dheemanjain15@gmail.com</a> | GitHub: <a href="https://github.com/DheemanJain" target="_blank">github.com/DheemanJain</a></p>
-        </header>
+<body>
 
-        <section style="padding: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            <h2 style="border-bottom: 2px solid #0077cc; padding-bottom: 10px;">Projects</h2>
+<header>
+  <h1 id="typing"></h1>
+  <p style="font-size:18px; color:#333;">Data Analyst | Excel | SQL | Power BI | Tableau | Python</p>
+</header>
 
-            <div style="margin-bottom: 30px;">
-                <h3>Power BI Survey Dashboard</h3>
-                <p>Interactive Power BI dashboard analyzing survey data from data professionals. Features advanced DAX, slicers, and comparative analysis across roles, salaries, countries, and job satisfaction.</p>
-                <a href="Data%20Professionals%20Survey%20Dashboard.pbix" download>Download Power BI File</a>
-                <div style="margin-top:10px;">[Screenshot Placeholder]</div>
-            </div>
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-            <div style="margin-bottom: 30px;">
-                <h3>SQL Data Cleaning Projects</h3>
-                <p>Thorough cleaning of world layoffs and student marks datasets using SQL. Utilized functions such as JOINs, CASE, IS NULL, and GROUP BY for data preparation for visualization and insights.</p>
-                <a href="DATA%20CLEANING%20PROJECT%20LAYOFFS.sql" download>Download Layoffs SQL</a><br>
-                <a href="DATA%20CLEANING%20PROJECT%20STUDENT_MARKS.sql" download>Download Student Marks SQL</a>
-                <div style="margin-top:10px;">[Screenshot Placeholder]</div>
-            </div>
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I'm <strong>Dheeman Jain</strong>, a data analyst passionate about transforming raw data into actionable insights. With experience across Excel, SQL, Tableau, Power BI, and Python, I specialize in crafting compelling dashboards, automating analysis, and communicating data stories that drive business growth. I bring internship and corporate experience at firms like Zomato and Share India, and I'm always eager to explore the next analytical challenge.</p>
+  </div>
+</section>
 
-            <div style="margin-bottom: 30px;">
-                <h3>Excel Dashboards</h3>
-                <p>Designed dynamic dashboards on Seattle road accidents and student grading using pivot tables and conditional formatting in Excel. Projects available at: 
-                    <a href="https://1drv.ms/x/c/c420b23459749e4a/ERxTODmig1FMqWyDnPX4cPoB9J4aGGE6B8KJ14WciujtbA?e=vPaExN" target="_blank">Road Accident</a>,
-                    <a href="https://1drv.ms/x/c/c420b23459749e4a/EV3oEBmdB49PrgmBSREP9DYBAQ5bxnSDX2zzmkyGawX-0w?e=FaTuOt" target="_blank">Student Marks</a>
-                </p>
-                <div style="margin-top:10px;">[Screenshot Placeholder]</div>
-            </div>
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <ul>
+      <li><strong>Data Tools:</strong> Excel, Power BI, Tableau, Tally, SPSS</li>
+      <li><strong>Languages:</strong> Python, SQL</li>
+      <li><strong>Capabilities:</strong> Data Cleaning, Dashboarding, EDA, Automation, Statistical Analysis</li>
+    </ul>
+  </div>
+</section>
 
-            <div style="margin-bottom: 30px;">
-                <h3>Python EDA Project</h3>
-                <p>Comprehensive data cleaning and EDA using Pandas and Matplotlib. Techniques included outlier detection, string manipulation, normalization, univariate/multivariate analysis, and visualization.</p>
-                <a href="EDA%20Project%20Pandas.ipynb" download>Download Jupyter Notebook</a>
-                <div style="margin-top:10px;">[Screenshot Placeholder]</div>
-            </div>
-        </section>
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>Zomato Ltd. (Full-Time, 2024)</h3>
+    <ul>
+      <li>Resolved 10,000+ customer issues with efficiency and hospitality</li>
+      <li>Introduced process improvements to enhance customer satisfaction</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Share India Fincap Pvt Ltd. (Internship, 2024)</h3>
+    <ul>
+      <li>Managed backend accounting using Excel, Tally, SAAP</li>
+      <li>Offered a pre-placement due to performance</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>College Sakha Pvt Ltd. (Internship, 2022)</h3>
+    <ul>
+      <li>Created 100+ SEO-optimized blogs and university listings</li>
+      <li>Learned digital marketing and educational content creation</li>
+    </ul>
+  </div>
+</section>
 
-        <section style="padding: 30px; margin-top: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            <h2 style="border-bottom: 2px solid #0077cc; padding-bottom: 10px;">Experience</h2>
-            <ul>
-                <li><strong>Zomato Ltd.</strong> – Customer Support Executive | Handled 10,000+ inquiries, drove retention, and process innovation.</li>
-                <li><strong>Share India Fincap Pvt Ltd.</strong> – Accounting Intern | Worked on Excel, Tally, received pre-placement offer.</li>
-                <li><strong>College Sakha Pvt Ltd.</strong> – Content Intern | Wrote 100+ SEO blogs and listing pages, learned SEO and digital marketing.</li>
-            </ul>
-        </section>
+<section id="projects">
+  <h2>Projects</h2>
 
-        <section style="padding: 30px; margin-top: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            <h2 style="border-bottom: 2px solid #0077cc; padding-bottom: 10px;">Skills & Tools</h2>
-            <p>Excel, SQL, Power BI, Tableau, Python, SPSS</p>
-        </section>
+  <div class="card">
+    <h3>📊 Road Accident Analysis Dashboard (Excel)</h3>
+    <p>Analyzed Seattle road accident data to identify patterns and risk zones. Used advanced pivot charts and conditional formatting to display trends and highlight safety recommendations. <br>
+    <a href="https://1drv.ms/x/c/c420b23459749e4a/ERxTODmig1FMqWyDnPX4cPoB9J4aGGE6B8KJ14WciujtbA?e=vPaExN" target="_blank">View Dashboard</a></p>
+    <img src="screenshot_road_accident.jpg" alt="Road Accident Dashboard" class="project-image" />
+  </div>
 
-        <section style="padding: 30px; margin-top: 30px; background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
-            <h2 style="border-bottom: 2px solid #0077cc; padding-bottom: 10px;">Certifications & Achievements</h2>
-            <ul>
-                <li>Great Learning: Data Analysis with Excel, Tally Certified</li>
-                <li>Forage Virtual Internships: JP Morgan, Citi, Accenture</li>
-                <li>Top 1% in academics and internships in college</li>
-                <li>Ranked AIR 1660 in DUJAT’21</li>
-                <li>Researched India–Sri Lanka income gap using SPSS</li>
-            </ul>
-        </section>
+  <div class="card">
+    <h3>📈 Student Marks Analysis Dashboard (Excel)</h3>
+    <p>Created a student performance tracker dashboard that visualizes marks distribution, subject-wise performance, and grading trends. Enabled education teams to make better academic decisions. <br>
+    <a href="https://1drv.ms/x/c/c420b23459749e4a/EV3oEBmdB49PrgmBSREP9DYBAQ5bxnSDX2zzmkyGawX-0w?e=FaTuOt" target="_blank">View Dashboard</a></p>
+    <img src="screenshot_student_marks.jpg" alt="Student Marks Dashboard" class="project-image" />
+  </div>
 
-        <footer style="text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9em; color: #888;">
-            © 2025 Dheeman Jain. All rights reserved.
-        </footer>
-    </div>
+  <div class="card">
+    <h3>🧹 Data Cleaning with SQL</h3>
+    <p>Used SQL to clean and structure real-world datasets (layoffs and student marks). Removed duplicates, handled NULLs, and standardized formats to enable BI tools to consume clean data. <br>
+    <em>Note: Projects stored locally</em></p>
+    <!-- Screenshot placeholder -->
+    <img src="screenshot_sql_cleaning.jpg" alt="SQL Cleaning" class="project-image" />
+  </div>
+
+  <div class="card">
+    <h3>📊 Survey Visualization (Power BI)</h3>
+    <p>Built interactive Power BI dashboard analyzing job satisfaction, salary trends, and skill demand across countries. Used slicers and DAX formulas for dynamic filtering and deep insights.</p>
+    <img src="screenshot_powerbi.jpg" alt="Power BI Dashboard" class="project-image" />
+  </div>
+
+  <div class="card">
+    <h3>📍Airbnb Listing Analysis (Tableau)</h3>
+    <p>Explored Airbnb data to identify optimal pricing, occupancy, and ratings. Created dynamic Tableau dashboards with filters and KPIs that helped spot profitable listing patterns.</p>
+    <img src="screenshot_tableau.jpg" alt="Airbnb Tableau" class="project-image" />
+  </div>
+
+  <div class="card">
+    <h3>🐍 Python EDA & Cleaning</h3>
+    <p>Performed complete EDA using Pandas & Matplotlib on raw datasets. Applied outlier detection, encoding, and created plots to summarize key relationships and trends.</p>
+    <img src="screenshot_python_eda.jpg" alt="Python EDA" class="project-image" />
+  </div>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <div class="card">
+    <ul>
+      <li>Data Analysis using Excel – Great Learning</li>
+      <li>Tally Certified Course</li>
+      <li>Forage Job Simulations: JP Morgan, Citi, Accenture</li>
+    </ul>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <div class="card">
+    <ul>
+      <li>Top 1% of college batch academically and professionally</li>
+      <li>Ranked AIR 1660 in DUJAT 2021</li>
+      <li>SPSS Project: Income disparity between India and Sri Lanka</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p><strong>Email:</strong> <a href="mailto:dheemanjain15@gmail.com">dheemanjain15@gmail.com</a></p>
+    <p><strong>Phone:</strong> +91 9205635119</p>
+    <p><strong>LinkedIn, GitHub, or Portfolio Links:</strong> [Add when available]</p>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Dheeman Jain | Built with 💙 for Data Storytelling
+</footer>
+
+<script>
+  const text = "Dheeman Jain";
+  let index = 0;
+  function type() {
+    if (index < text.length) {
+      document.getElementById("typing").innerHTML += text.charAt(index);
+      index++;
+      setTimeout(type, 120);
+    }
+  }
+  type();
+</script>
+
 </body>
 </html>
