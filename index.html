@@ -8,21 +8,27 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #1f1f1f;
-      color: #eee;
+      background: linear-gradient(to right, #0b1a2b, #145c63);
+      color: #f1f1f1;
     }
     header {
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      padding: 60px 20px;
+      padding: 80px 20px;
       text-align: center;
     }
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
+      margin-bottom: 20px;
+    }
     h1 {
-      margin: 0;
-      font-size: 42px;
+      margin: 10px 0;
+      font-size: 52px;
     }
     nav {
-      background: #111;
+      background: #0a141f;
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -47,17 +53,16 @@
       margin: auto;
     }
     h2 {
-      border-bottom: 2px solid #3498db;
+      border-bottom: 2px solid #1abc9c;
       padding-bottom: 5px;
       color: #61dafb;
     }
     .card {
-      background: #2b2b2b;
-      margin: 20px;
+      background: #1e2a33;
+      margin: 20px 0;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-      flex: 1 1 45%;
       transition: transform 0.3s ease;
     }
     .card:hover {
@@ -71,7 +76,7 @@
       padding-left: 20px;
     }
     footer {
-      background: #111;
+      background: #0a141f;
       color: #aaa;
       text-align: center;
       padding: 20px;
@@ -86,13 +91,20 @@
       gap: 20px;
       justify-content: space-between;
     }
+    .projects-grid .card {
+      flex: 1 1 45%;
+    }
+    p {
+      line-height: 1.6;
+    }
   </style>
 </head>
 <body>
 
 <header>
+  <img src="dheeman.jpg" alt="Dheeman Jain">
   <h1 id="typing"></h1>
-  <p style="font-size:18px; color:#ccc;">Data Analyst | Excel | SQL | Power BI | Tableau | Python</p>
+  <p style="font-size: 20px; color: #e0f7fa;">Data Analyst | Excel | SQL | Power BI | Tableau | Python</p>
 </header>
 
 <nav>
@@ -218,7 +230,7 @@
     <p><strong>Email:</strong> <a href="mailto:dheemanjain15@gmail.com">dheemanjain15@gmail.com</a></p>
     <p><strong>Phone:</strong> +91 9205635119</p>
     <p><strong>GitHub:</strong> <a href="https://github.com/DheemanJain" target="_blank">DheemanJain</a></p>
-    <p><strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/dheeman-jain-0ba2a31ab/" target="_blank">DheemanJain</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dheeman-jain-0ba2a31ab/" target="_blank">Dheeman Jain</a></p>
   </div>
 </section>
 
